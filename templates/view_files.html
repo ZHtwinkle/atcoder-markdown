@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Flask Markdown Files</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Uploaded Files</h1>
+
+    <table class="files">
+        <tr>
+            <th>Filename</th>
+            <th>Download</th>
+        </tr>
+        {% for file in files %}
+        <tr>
+            <td>{{ file }}</td>
+
+            <td><a href="{{ url_for('download_file', filename=file) }}"+ id="download-btn">Download</a></td>
+
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="{{ url_for('download_all_files') }}"+ id="download-btn">打包下载全部文件</a>
+</body>
+</html>

@@ -1,0 +1,62 @@
+/* Style for the upload form */
+form {
+    margin: auto;
+    width: 50%;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+/* Style for the file input */
+input[type="file"] {
+    margin: 10px 0;
+}
+
+/* Style for the submit button */
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style for the files table */
+.files {
+    margin: auto;
+    width: 50%;
+    border-collapse: collapse;
+}
+
+.files th {
+    background-color: #4CAF50;
+    color: white;
+    text-align: left;
+    padding: 10px;
+}
+
+.files td, .files th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.files tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.files tr:hover {
+    background-color: #ddd;
+}
+
+/* Style for the download button */
+#download-btn {
+    margin: 20px auto;
+    display: block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
